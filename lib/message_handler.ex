@@ -34,8 +34,11 @@ defmodule Fbtestapp.MessageHandler do
 
     url = "https://graph.facebook.com/v2.6/me/messages?access_token=#{@fb_page_access_token}"
     headers = [{"Content-Type", "application/json"}]
-    Logger.info "Posting reply to URL:\n#{url}"
-    Logger.info "Reply content:\n#{inspect payload}"
+    IO.puts("URL URL URL URL URL :")
+    IO.inspect(url)
+    IO.puts("PAYLOAD PAYLOAD PAYLOAD  :")
+    IO.inspect(payload)
+    # Logger.info "Reply content:\n#{inspect payload}"
     HTTPoison.post!(url, Poison.encode!(payload), headers)
   end
 end

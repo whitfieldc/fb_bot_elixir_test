@@ -27,6 +27,10 @@ defmodule Fbtestapp.Router do
 
     send_resp(conn, 200, "Message Received")
   end
+
+  get "/privacy" do
+    send_resp(conn, 200, "this is just a test app pls give me a break")
+  end
   
   match _ do
     send_resp(conn, 404, "404 - Page not found")

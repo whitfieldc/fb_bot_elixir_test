@@ -1,20 +1,3 @@
 # Fbtestapp
 
-**TODO: Add description**
-
-## Installation
-
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed as:
-
-  1. Add fbtestapp to your list of dependencies in `mix.exs`:
-
-        def deps do
-          [{:fbtestapp, "~> 0.0.1"}]
-        end
-
-  2. Ensure fbtestapp is started before your application:
-
-        def application do
-          [applications: [:fbtestapp]]
-        end
-
+Simple facebook messenger bot following [@cazzrin](https://twitter.com/cazzrin)'s  [Building a bot for Facebook Messenger, using Elixir](http://cazrin.net/blog/2016/building-a-bot-for-facebook-messenger-using-elixir/?utm_campaign=elixir_radar_49&utm_medium=email&utm_source=RD+Station)

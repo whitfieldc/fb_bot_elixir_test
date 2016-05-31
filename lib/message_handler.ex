@@ -6,7 +6,7 @@ defmodule Fbtestapp.MessageHandler do
   def handle(msg = %{message: %{text: _text}}) do
     buttons = [
       %{type: "postback", title: "Your name", payload: "PB_NAME"},
-      %{type: "web_url", title: "Your website", url: "https://https://playoverwatch.com/en-us/heroes/bastion/"}
+      %{type: "web_url", title: "Your website", url: "https://playoverwatch.com/en-us/heroes/bastion/"}
     ]
 
     send_button_message(msg.sender.id, "Choose from the following options", buttons)

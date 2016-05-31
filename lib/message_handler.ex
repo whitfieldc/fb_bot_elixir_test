@@ -39,6 +39,8 @@ defmodule Fbtestapp.MessageHandler do
     IO.puts("PAYLOAD PAYLOAD PAYLOAD  :")
     IO.inspect(payload)
     # Logger.info "Reply content:\n#{inspect payload}"
-    HTTPoison.post!(url, Poison.encode!(payload), headers)
+    response = HTTPoison.post!(url, Poison.encode!(payload), headers)
+    IO.puts("RESPONSE RESPONSE RESPONSE")
+    IO.inspect(response)
   end
 end

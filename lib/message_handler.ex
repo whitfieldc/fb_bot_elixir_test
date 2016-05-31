@@ -11,6 +11,10 @@ defmodule Fbtestapp.MessageHandler do
 
     send_button_message(msg.sender.id, "Choose from the following options", buttons)
   end
+  
+  def handle(msg) do
+    Logger.info "Unhandled message:\n#{inspect msg}"
+  end
 
   defp send_button_message(recipient, text, buttons) do
     payload = %{
